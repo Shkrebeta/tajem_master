@@ -242,9 +242,13 @@ section {
 .expertise_block p {
     opacity: 0.749;
     letter-spacing: 1px;
-    line-height: 1.6rem;
+    line-height: 1.6em;
     color: #333;
     font-weight: 300;
+}
+
+.black_text h2 {
+    text-transform: uppercase;
 }
 
 .expertise_block {
@@ -283,13 +287,63 @@ section {
 
 .team_container img {
     width: 100%;
-    background-color: #fff;
+    height: 100;
+    background-color: #ddd;
     max-height: 229rem;
 }
 
-.team_container p:last-child {
+.team_container p:last-child,
+.gray_container p:last-child {
     display: flex;
     justify-content: center;
+}
+
+.gray_container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.gray_container div {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 0 15rem 70rem;
+}
+
+.gray_container div a {
+    position: relative;
+    display: inline-block;
+    padding-right: 30px;
+    color: #413d4b;
+    transition: .5s;
+    font-weight: 300;
+}
+
+.gray_container div a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 11rem;
+    height: 11rem;
+    border-right: 1px solid #413d4b;
+    border-bottom: 1px solid #413d4b;
+    transform: translateY(-50%) rotate(-45deg);
+    transition: .5s;
+}
+
+.gray_container div a:hover {
+    color: #00e0d0;
+}
+
+.gray_container div a:hover::before {
+    border-color: #00e0d0;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+div.grey_block {
+    padding: 150px 0;
+    margin-bottom: 70rem;
+    background-color: #ddd;
 }
 
 @media screen and (min-width:768px) {
@@ -330,6 +384,10 @@ section {
 
     .team_container figure {
         width: 40%;
+    }
+
+    .gray_container div {
+        justify-content: space-between;
     }
 }
 
