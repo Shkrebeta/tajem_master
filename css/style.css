@@ -346,6 +346,71 @@ div.grey_block {
     background-color: #ddd;
 }
 
+footer {
+    padding: 70rem 15rem;
+    background: #000 url(../img/five.png) no-repeat center/cover;
+}
+
+footer>div>div {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.logo_footer {
+    padding-bottom: 20px;
+}
+
+footer h3 {
+    padding: 20rem 0 40rem;
+    min-height: 50px;
+}
+
+.adress,
+.phone_flex {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 24rem;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a {
+    text-transform: uppercase;
+}
+
+.lapku {
+    background: #000 url(../img/four.png) no-repeat center/cover;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+}
+
+.text {
+    padding: 0 415px 52px 415px;
+}
+
+.lapku h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.text-two {
+    display: flex;
+    justify-content: center;
+    color: #c0bcc9;
+}
+
+.center-2 {
+    display: flex;
+    justify-content: center;
+    padding: 46px;
+}
+
 @media screen and (min-width:768px) {
     html {
         font-size: 0.85px;
@@ -388,6 +453,10 @@ div.grey_block {
 
     .gray_container div {
         justify-content: space-between;
+    }
+
+    footer>div>div {
+        flex-wrap: nowrap;
     }
 }
 
