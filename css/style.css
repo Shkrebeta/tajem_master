@@ -144,6 +144,16 @@ section {
     transition: .5;
 }
 
+.btn_container {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.expertise_block h3{
+    padding: 25px;
+}
+
 .btn:hover {
     color: black;
     background-color: #00e0d0;
@@ -249,7 +259,15 @@ section {
 
 .black_text h2 {
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
 }
+
+.black_text p {
+    display: flex;
+    justify-content: center;
+}
+
 
 .expertise_block {
     padding: 50rem;
